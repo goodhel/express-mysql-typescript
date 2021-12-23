@@ -11,6 +11,7 @@
 *.pem
 .husky
 package-lock.json
+/src/config/app.config.json
 
 # local env files
 .env

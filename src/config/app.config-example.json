@@ -1,0 +1,29 @@
+{
+  "port": 8084,
+  "db": {
+    "host": "localhost",
+    "user": "youruser",
+    "password": "yourpassword",
+    "database": "yourdatabase",
+    "charset": "utf8mb4",
+    "rejectEmpty": true
+  },
+  "email": {
+    "user": "email@test.com",
+    "pass": "email.test"
+  },
+  "jwt": {
+    "secret": "your-scret-key",
+    "expired": 18000000
+  },
+  "site": {
+    "url": "http://localhost:8084",
+    "title": {
+      "main": "Site main title",
+      "sub": "Sub-title heheheh"
+    }
+  },
+  "xendit": {
+    "api_key": "asdasdjkansdjabsdjasbffbajsd"
+  }
+}
