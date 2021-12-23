@@ -3,7 +3,7 @@ import config from '../config/app.config.json'
 const pool = mariadb.createPool(config.db)
 
 class _database {
-  async query(sql: string, params: Array<String>) {
+  query = async (sql: string, params: Array<String>) => {
     let conn
     const stripMeta = true
 

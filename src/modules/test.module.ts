@@ -1,7 +1,7 @@
 import mysql from '../helper/database'
 
 class _test {
-  async getList() {
+  getList = async () => {
     const query = {
       sql: 'SELECT * FROM test',
       params: []
