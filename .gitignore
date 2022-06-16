@@ -13,6 +13,7 @@
 package-lock.json
 /src/config/app.config.json
 pnpm-lock.yaml
+.idea
 
 # local env files
 .env
