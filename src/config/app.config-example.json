@@ -1,5 +1,5 @@
 {
-  "port": 8084,
+  "port": 5005,
   "db": {
     "host": "localhost",
     "user": "youruser",

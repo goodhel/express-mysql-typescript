@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "nodemon",
     "build": "tsc",
+    "start": "node dist/app.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky install"
   },
@@ -20,24 +21,33 @@
   "author": "yudhi kusuma",
   "license": "ISC",
   "devDependencies": {
+    "@types/bcrypt": "^5.0.0",
     "@types/cors": "^2.8.12",
     "@types/express": "^4.17.13",
-    "@typescript-eslint/eslint-plugin": "^5.8.0",
-    "@typescript-eslint/parser": "^5.8.0",
-    "eslint": "^7.32.0",
-    "eslint-config-standard": "^16.0.3",
-    "eslint-plugin-import": "^2.25.3",
+    "@types/jsonwebtoken": "^8.5.8",
+    "@types/multer": "^1.4.7",
+    "@types/node": "^18.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.28.0",
+    "@typescript-eslint/parser": "^5.28.0",
+    "eslint": "^8.17.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.0.0",
     "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^5.2.0",
-    "husky": "^7.0.4",
-    "lint-staged": "^12.1.3",
-    "prettier": "2.5.1",
-    "ts-node": "^10.4.0",
-    "typescript": "^4.5.4"
+    "eslint-plugin-promise": "^6.0.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.1",
+    "prettier": "2.7.1",
+    "ts-node": "^10.8.1",
+    "typescript": "^4.7.3"
   },
   "dependencies": {
+    "bcrypt": "^5.0.1",
     "cors": "^2.8.5",
-    "express": "^4.17.2",
-    "mariadb": "^2.5.5"
+    "express": "^4.18.1",
+    "joi": "^17.6.0",
+    "jsonwebtoken": "^8.5.1",
+    "mariadb": "^3.0.0",
+    "multer": "1.4.5-lts.1"
   }
 }

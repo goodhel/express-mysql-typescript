@@ -12,6 +12,7 @@
 .husky
 package-lock.json
 /src/config/app.config.json
+pnpm-lock.yaml
 
 # local env files
 .env
