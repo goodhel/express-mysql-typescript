@@ -3,6 +3,7 @@ import cors from 'cors'
 import path from 'path'
 import { routes } from '../routes'
 import response from '../helpers/response'
+import middleware from '../helpers/middleware'
 
 const app = express()
 
@@ -24,6 +25,8 @@ app.use((req, res, next) => {
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 app.use('/', express.static(path.join(__dirname, 'public')))
+
+middleware.jwtAuth()
 
 app.get('/', (req, res, next) => {
   res.status(200).send({ data: 'Hello this is API from Express' })

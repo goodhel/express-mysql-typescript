@@ -133,6 +133,24 @@ class _auth {
       }
     }
   }
+
+  listUser = async () => {
+    try {
+      const users = await mysql.query('SELECT * FROM auth_user', [])
+
+      return {
+        status: true,
+        data: users
+      }
+    } catch (error) {
+      console.error('listUser Error ', error)
+
+      return {
+        status: false,
+        error
+      }
+    }
+  }
 }
 
 export default new _auth()
