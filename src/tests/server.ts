@@ -1,13 +1,10 @@
 import express from 'express'
 import cors from 'cors'
 import path from 'path'
-import { routes } from './routes'
-import response from './helpers/response'
-import config from './config/app.config.json'
+import { routes } from '../routes'
+import response from '../helpers/response'
 
 const app = express()
-
-const port = process.env.PORT || config.port || 5005
 
 app.use(cors())
 
@@ -37,6 +34,4 @@ routes(app)
 
 app.use(response.errorHandler)
 
-app.listen(port, () => {
-  console.log(`Server listening on http://localhost:${port}`)
-})
+export default app

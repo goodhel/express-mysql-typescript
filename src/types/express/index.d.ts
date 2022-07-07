@@ -5,8 +5,6 @@ interface PayloadUser {
   e: string
   ri: number
   rn: string
-  scope: string
-  t: string
 }
 
 declare namespace Express {

@@ -59,3 +59,14 @@ npx eslint --init
 3. npm set-script prepare "husky install"
 4. npx husky add .husky/pre-commit "npx lint-staged"
 ```
+
+## Jest
+```
+npm i -D jest @types/jest ts-jest
+jest --init
+```
+
+## Supertest
+```
+npm i -D supertest @types/supertest
+```
